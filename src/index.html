@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <title><%= htmlWebpackPlugin.options.templateParameters.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <link rel="canonical" href="<%= htmlWebpackPlugin.options.templateParameters.url %>" />
+    <link rel=icon type=image/png href=./icons/128.png />
+    <link rel=manifest href=./manifest.json />
+
+    <meta name="application-name" content="<%= htmlWebpackPlugin.options.templateParameters.title %>" />
+    <meta name="author" content="<%= htmlWebpackPlugin.options.templateParameters.author %>" />
+    <meta name="description" content="<%= htmlWebpackPlugin.options.templateParameters.description %>" />
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.templateParameters.keywords %>" />
+    <meta name="referrer" content="strict-origin" />
+
+    <meta itemprop="name" content="<%= htmlWebpackPlugin.options.templateParameters.title %>" />
+    <meta itemprop="description" content="<%= htmlWebpackPlugin.options.templateParameters.description %>" />
+    <meta itemprop="image" content="./icons/128.png" />
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="msapplication-starturl" content="/" />
+    <meta name="msapplication-tooltip" content="<%= htmlWebpackPlugin.options.templateParameters.description %>" />
+    <meta name="msapplication-TileColor" content="#f0f0f0" />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= htmlWebpackPlugin.options.templateParameters.url %>" />
+    <meta property="og:title" content="<%= htmlWebpackPlugin.options.templateParameters.title %>" />
+    <meta property="og:description" content="<%= htmlWebpackPlugin.options.templateParameters.description %>" />
+    <meta property="og:image" content="./icons/512.png" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="app" />
+    <meta name="twitter:title" content="<%= htmlWebpackPlugin.options.templateParameters.title %>" />
+    <meta name="twitter:description" content="<%= htmlWebpackPlugin.options.templateParameters.description %>" />
+    <meta name="twitter:url" content="<%= htmlWebpackPlugin.options.templateParameters.url %>" />
+    <meta name="twitter:image" content="./icons/512.png" />
+
+    <meta name="apple-mobile-web-app-title" content="<%= htmlWebpackPlugin.options.templateParameters.title %>" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#333" />
+    <link rel="apple-touch-icon" href="./icons/512.png" />
+
+    <meta name="theme-color" content="#f0f0f0" />
+    <meta name="color-scheme" content="light" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=<%= htmlWebpackPlugin.options.templateParameters.analytics %>"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', '<%= htmlWebpackPlugin.options.templateParameters.analytics %>')
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Webpage",
+        "url": "<%= htmlWebpackPlugin.options.templateParameters.url %>",
+        "name": "<%= htmlWebpackPlugin.options.templateParameters.title %>",
+        "headline": "<%= htmlWebpackPlugin.options.templateParameters.title %>",
+        "description": "<%= htmlWebpackPlugin.options.templateParameters.description %>",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "<%= htmlWebpackPlugin.options.templateParameters.url %>"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "<%= htmlWebpackPlugin.options.templateParameters.author %>"
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "./icons/logo.png",
+          "width": 1024,
+          "height": 512
+        },
+        "datePublished": "<%= htmlWebpackPlugin.options.templateParameters.publishedDate %>",
+        "keywords": "<%= htmlWebpackPlugin.options.templateParameters.keywords %>"
+      }
+    </script>
+  </head>
+  <body>
+    <div class="project">
+      @require('./components/header.html')
+
+      <main class="page-content">            
+          
+          @require('./components/home.html')
+
+          @require('./components/about.html')
+
+          @require('./components/service.html')
+
+          @require('./components/portfolio.html')
+
+          @require('./components/blog.html')
+
+          @require('./components/subscribe.html')
+
+      </main>
+
+      @require('./components/footer.html')
+    </div>
+  </body>
+</html>
