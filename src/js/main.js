@@ -27,40 +27,39 @@ import { fslightbox } from 'fslightbox'
 
 
 
-// function navbarFixed(){
-//     if($('.page-header').length){
-//         $(window).scroll(function(){
-//             var scroll = $(window).scrollTop();
+window.onscroll = function() {navbarFixed()};
 
-//             if (scroll > 100 ){
-//                 $('.page-header').addClass("sticky");
-//             } else {
-//                 $('.page-header').removeClass("sticky");
-//             }
-//         });
-//     }
-// }
-// navbarFixed();
+const header = document.getElementById("js-header");
 
+const sticky = header.offsetTop;
 
-// $('.form-control').on('focusin', function() {
-//     var 
-//         $this = $(this),
-//         row = $this.closest('.form-group'),
-//         label = row.find('label');
-
-//     row.addClass('active');
-// });
-
-// $('.form-control').on('focusout', function() {
-//     var 
-//         $this = $(this),
-//         row = $this.closest('.form-group'),
-//         label = row.find('label'),
-//         val = this.value;
+function navbarFixed() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 
 
-//     if (!val) {
-//         row.removeClass('active');
-//     }
-// });
+
+const formControls = document.querySelectorAll(".form-control");
+
+formControls.forEach((formControl) => {
+  formControl.addEventListener("focus", function(){
+    const row = formControl.closest('.form-group');
+    const label = row.querySelector('label');
+    row.classList.add("active");
+  });
+
+
+  formControl.addEventListener("blur", function(){
+    const row = formControl.closest('.form-group');
+    const label = row.querySelector('label');
+    const val = formControl.value;
+
+    if (!val) {
+      row.classList.remove("active");
+    }
+  });
+});
