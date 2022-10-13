@@ -1,35 +1,6 @@
 // Components
 
-::-moz-selection {
-    background: #000;
-    color: #fff;
-}
 
-
-body {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #001D3E;
-    background: #fff;
-}
-
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 700;
-}
 
 .btn {
     font-size: .875rem;
@@ -49,7 +20,6 @@ h6 {
 }
 
 .page-header.sticky .btn {
-
     box-shadow: 0px 5px 10px rgba(47, 130, 238, 0.2);
 }
 
@@ -958,110 +928,15 @@ label.error {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-.fancy-modal {
-    display: none;
-}
-
-
-.fancy-modal {
-    max-width: 770px;
+.img-full {
     width: 100%;
-    border-radius: 5px;
-    padding: 0;
-    border: none;
-    background: #fff;
-    min-height: 480px;
-
-
-    box-shadow: 0px 20px 25px rgba(47, 130, 238, 0.2);
-}
-
-#success-form.fancy-modal {
-    min-height: auto;
-}
-
-.fancybox-bg {
-    background: #EEF5FF;
-}
-
-.fancybox-is-open .fancybox-bg {
-    opacity: 1;
-}
-
-.fancybox-is-open .fancybox-bg:after,
-.fancybox-is-open .fancybox-bg:before {
-    content: '';
-    position: absolute;
-    pointer-events: none;
-    width: 100px;
-    height: 100px;
-    background: url(../images/ellipse.svg) center no-repeat;
-
-    background-size: cover;
-
-
-    animation: float 5.7s ease-in-out infinite;
-}
-
-.fancybox-is-open .fancybox-bg:before {
-    top: 50%;
-    left: 15%;
-}
-
-.fancybox-is-open .fancybox-bg:after {
-    top: 30px;
-    left: 72%;
-    width: 55px;
-    height: 55px;
-
-
-    animation-delay: 1.25s;
-
-}
-
-
-@keyframes float {
-    0% {
-
-        transform: translatey(10px);
-    }
-
-    50% {
-
-        transform: translatey(-10px);
-    }
-
-    100% {
-
-        transform: translatey(10px);
-    }
+    height: 100%;
+    object-fit: cover;
 }
 
 
 
-.fancybox-close-small:after {
-    color: #fff;
-}
 
-.fancy-modal__inner {
-    padding: 50px;
-    overflow: hidden;
-}
-
-.fancy-modal__inner .btn {
-    width: 100%;
-}
 
 .form-title {
     text-transform: uppercase;
@@ -1079,9 +954,6 @@ label.error {
     margin-bottom: 10px;
 }
 
-.fancy-modal .navbar-brand {
-    margin-bottom: 30px;
-}
 
 .form-img img {
     display: block;
@@ -1091,109 +963,10 @@ label.error {
     transform: translateX(-50%);
 }
 
-.slick-slide {
-    outline: none;
-}
-
-.slick-arrow {
-    border: none;
-    padding: 0px;
-    position: absolute;
-    z-index: 10;
-    top: 50%;
-    cursor: pointer;
-    text-align: center;
-
-    border: none;
-    background: transparent;
-
-    color: #777;
-
-    width: 52px;
-    height: 52px;
-    line-height: 52px;
-
-    font-size: 1.5rem;
-
-
-    transition: all .2s ease-in-out;
-
-
-    transform: translateY(-50%);
-}
-
-.slick-arrow:hover {
-    color: #001D3E;
-}
-
-.slick-prev {
-    left: -52px;
-}
-
-.slick-next {
-    right: -52px;
-}
-
-.slick-dots {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.slick-dots li {
-    margin: 0 2px;
-}
-
-.slick-dots button {
-    width: 15px;
-    height: 15px;
-    opacity: 1;
-    background-color: transparent;
-    border: 2px solid #33ACFF;
-    padding: 0px;
-    font-size: 0px;
-    line-height: 0px;
-    border-radius: 50%;
-    cursor: pointer;
-
-
-    transition: all .2s ease-in-out;
-}
-
-.slick-dots li button:hover,
-.slick-dots li.slick-active button {
-    background: #33ACFF;
-    border-color: #33ACFF;
-    opacity: 1;
-}
 
 
 
-.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-    width: 7px;
 
-    background-color: rgba(247, 0, 0, 0.85);
-}
-
-.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
-    background-color: rgba(247, 0, 0, 1);
-}
-
-.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
-.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
-    background-color: rgba(247, 0, 0, .3);
-}
-
-.mCSB_scrollTools .mCSB_draggerRail {
-    width: 5px;
-
-    background-color: rgba(127, 127, 127, 0.75);
-}
 
 
 @media (max-width: 1199.98px) {}

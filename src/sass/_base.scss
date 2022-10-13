@@ -32,4 +32,28 @@ body {
   font-size: $font-size-base;
   line-height: 1.5 * $font-size-base;
   font-style: normal;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #001D3E;
+    background: #fff;
+}
+
+
+::-moz-selection {
+    background: #000;
+    color: #fff;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
 }
