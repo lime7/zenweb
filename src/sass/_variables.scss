@@ -29,24 +29,32 @@ $body-bg:      $white;
 $body-color:   #001D3E;
 
 $blue:         #33ACFF;
+$blue-700:     #2F82EE;
 
 $gray-400:     #FCFBFF;
+$gray-500:     #E8E8E8;
 $gray-600:     #777;
 
 $colors: (
   "blue":       $blue,
   "light":      $gray-400,
-  "secondary":  $gray-600
+  "secondary":  $gray-600,
+  "gray":       $gray-500,
+  "dark":       $body-color
 );
 
 $primary:        $blue;
 $light:          $gray-400;
 $secondary:      $gray-600;
+$gray:           $gray-500;
+$dark:           $body-color;
 
 $theme-colors: ( 
   "primary":       $primary,
   "light":         $light,
-  "secondary":     $secondary
+  "secondary":     $secondary,
+  "gray":          $gray,
+  "dark":          $body-color
 );
 
 
@@ -81,7 +89,9 @@ $display-font-weight:  $font-weight-bold;
 
 
 
-
+$box-shadow:                  -1px .75rem 1.5rem rgba($secondary, 0.17);
+$box-shadow-sm:               0 1.25rem 1.5rem rgba($dark, 0.17);
+// $box-shadow-lg:               0 1rem 3rem rgba($black, .175);
 
 
 
@@ -120,11 +130,10 @@ $input-border-width:                    1px;
 // $form-feedback-valid-color:             $primary;
 // $form-feedback-invalid-color:           $danger;
 
-// $form-label-margin-bottom:              .25rem;
-// $form-label-font-size:                  .75rem;
-// $form-label-font-style:                 null;
-// $form-label-font-weight:                $font-weight-semibold;
-// $form-label-color:                      $primary;
+$form-label-margin-bottom:              0;
+$form-label-font-size:                  .875rem;
+$form-label-font-weight:                400;
+$form-label-color:                      $dark;
 
 
 $nav-link-padding-y:                0;
@@ -150,16 +159,13 @@ $navbar-brand-margin-end:           0;
 // $navbar-toggler-padding-y:          .25rem;
 // $navbar-toggler-padding-x:          .75rem;
 // $navbar-toggler-font-size:          $font-size-lg;
-// $navbar-toggler-border-radius:      $btn-border-radius;
-// $navbar-toggler-focus-width:        $btn-focus-width;
-// $navbar-toggler-transition:         box-shadow .15s ease-in-out;
+$navbar-toggler-border-radius:      50%;
+$navbar-toggler-focus-width:        0;
 
 $navbar-light-color:                rgba($body-color, 1);
 $navbar-light-hover-color:          rgba($body-color, 1);
 $navbar-light-active-color:         rgba($body-color, 1);
 $navbar-light-disabled-color:       rgba($body-color, 1);
-// $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
-// $navbar-light-toggler-border-color: rgba($body-color, .1);
 $navbar-light-brand-color:          $navbar-light-active-color;
 $navbar-light-brand-hover-color:    $navbar-light-active-color;
 
@@ -171,3 +177,49 @@ $navbar-dark-disabled-color:        rgba($white, 1);
 $navbar-dark-toggler-border-color:  rgba($white, 1);
 $navbar-dark-brand-color:           $navbar-dark-active-color;
 $navbar-dark-brand-hover-color:     $navbar-dark-active-color;
+
+
+$card-spacer-y:                     $spacer * 1.25;
+$card-spacer-x:                     $spacer;
+$card-title-spacer-y:               $spacer;
+$card-border-width:                 0;
+$card-border-radius:                0;
+$card-box-shadow:                   null;
+$card-cap-padding-y:                $card-spacer-y * .5;
+$card-cap-padding-x:                $card-spacer-x;
+$card-cap-color:                    null;
+$card-height:                       null;
+$card-color:                        null;
+$card-bg:                           $white;
+$card-img-overlay-padding:          $spacer;
+
+
+
+$modal-inner-padding:               0;
+$modal-content-bg:                  $white;
+$modal-content-border-width:        0;
+$modal-content-border-radius:       0;
+$modal-content-inner-border-radius: 0;
+
+$modal-backdrop-bg:                 #EEF5FF;
+$modal-backdrop-opacity:            1;
+
+
+
+$form-check-input-width:                  1em;
+$form-check-min-height:                   $font-size-base;
+$form-check-padding-start:                0;
+$form-check-margin-bottom:                0;
+$form-check-label-color:                  $secondary;
+$form-check-input-bg:                     $gray;
+$form-check-input-border:                 1px solid $gray;
+$form-check-input-border-radius:          .125em;
+$form-check-radio-border-radius:          50%;
+// $form-check-input-focus-border:           $input-focus-border-color;
+// $form-check-input-focus-box-shadow:       $input-btn-focus-box-shadow;
+
+$form-check-input-checked-color:          $primary;
+$form-check-input-checked-bg-color:       $primary;
+$form-check-input-checked-border-color:   $primary;
+$form-check-input-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
+$form-check-radio-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>");

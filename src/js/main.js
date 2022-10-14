@@ -13,14 +13,24 @@ import Modal from 'bootstrap/js/dist/modal'
 import { tns } from 'tiny-slider/src/tiny-slider'
 
 var slider = tns({
-  container: '.blog-slider',
-  items: 3,
+  container: '.js-slider',
+  items: 1,
   slideBy: 'page',
   autoplay: false,
   nav: false,
   prevButton: document.getElementById('#prev'),
   nextButton: document.getElementById('#next'),
   controlsText: ['<span class="fas fa-chevron-left"></span>', '<span class="fas fa-chevron-right"></span>'],
+  responsive: {
+    576: {
+      gutter: 20,
+      items: 2
+    },
+    768: {
+      gutter: 20,
+      items: 3
+    },
+  }
 })
 
 import { fslightbox } from 'fslightbox'
