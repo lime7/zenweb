@@ -1,0 +1,58 @@
+<div class="modal fade modal-lg" id="callback" tabindex="-1" aria-labelledby="callback" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close position-absolute top-0 end-0 z-10 mt-2" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body p-0">
+        <form class="form">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="p-5">
+                <div class="mb-3">
+                  <h4 class="form-title text-uppercase mb-3">
+                    Leave a request
+                  </h4>
+                  <div class="text-secondary">
+                    And we will contact you shortly
+                  </div>
+                </div>
+                <div class="form-group position-relative mb-2">
+                  <label for="name" class="d-block position-absolute z-3 pointer-events-none start-0"><small>Name</small></label>
+                  <input type="text" name="name" id="name" class="form-control" data-rule-required="true" data-msg="Error" placeholder="">
+                </div>
+                <div class="form-group position-relative mb-2">
+                  <label for="email" class="d-block position-absolute z-3 pointer-events-none start-0"><small>E-mail</small></label>
+                  <input type="text" name="email" id="email" class="form-control" data-rule-required="true" data-msg="Error" placeholder="">
+                </div>
+                <div class="form-group position-relative mb-2">
+                  <label for="phone" class="d-block position-absolute z-3 pointer-events-none start-0"><small>Phone</small></label>
+                  <input type="text" name="phone" id="phone" class="form-control js-phone" data-rule-required="true" data-msg="Error" placeholder="">
+                </div>
+                <div class="form-group position-relative my-4">
+                  <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input me-2 mt-0" type="checkbox" value="" id="agree">
+                    <label class="form-check-label" for="agree">
+                      I give my consent to the processing of my personal data
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary d-block">
+                  <span class="position-relative z-3 px-5">Send</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-6 bg-primary text-center">
+              <div class="p-5 h-100 pb-0">
+                <a class="navbar-brand mb-4 d-flex justify-content-center" href="#">
+                  <img src="<%=require('../images/logo-w.svg')%>" alt="ZenWeb">
+                </a>
+                <div class="form-img ">
+                  <img src="<%=require('../images/rocket.svg')%>" alt="" class="d-block position-relative start-50 translate-middle-x">
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

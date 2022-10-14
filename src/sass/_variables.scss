@@ -2,3 +2,224 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+
+$font-family-text:    'Roboto', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+
+
+$enable-caret:                true;
+$enable-rounded:              true;
+$enable-shadows:              false;
+$enable-gradients:            false;
+$enable-transitions:          true;
+$enable-reduced-motion:       true;
+$enable-smooth-scroll:        true;
+$enable-grid-classes:         true;
+$enable-container-classes:    true;
+$enable-cssgrid:              true;
+$enable-button-pointers:      true;
+$enable-rfs:                  true;
+$enable-validation-icons:     true;
+$enable-negative-margins:     true;
+$enable-deprecation-messages: true;
+$enable-important-utilities:  true;
+
+
+$white:        #fff;
+$body-bg:      $white;
+$body-color:   #001D3E;
+
+$blue:         #33ACFF;
+$blue-700:     #2F82EE;
+
+$gray-400:     #FCFBFF;
+$gray-500:     #E8E8E8;
+$gray-600:     #777;
+
+$colors: (
+  "blue":       $blue,
+  "light":      $gray-400,
+  "secondary":  $gray-600,
+  "gray":       $gray-500,
+  "dark":       $body-color
+);
+
+$primary:        $blue;
+$light:          $gray-400;
+$secondary:      $gray-600;
+$gray:           $gray-500;
+$dark:           $body-color;
+
+$theme-colors: ( 
+  "primary":       $primary,
+  "light":         $light,
+  "secondary":     $secondary,
+  "gray":          $gray,
+  "dark":          $body-color
+);
+
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3
+);
+
+$font-size-base:              1rem;
+$line-height-base:            1.5;
+
+$transition-base:             all .2s ease-in-out;
+
+$font-weight-bold: 700;
+$font-weight-medium: 500;
+$font-weight-light: 300;
+
+
+$link-color: $blue;
+$link-hover-color: darken($blue, 10%);
+
+$btn-link-color:              $link-color;
+$btn-link-hover-color:        $link-hover-color;
+
+$headings-font-weight: $font-weight-bold;
+$display-font-weight:  $font-weight-bold;
+
+
+
+$box-shadow:                  -1px .75rem 1.5rem rgba($secondary, 0.17);
+$box-shadow-sm:               0 1.25rem 1.5rem rgba($dark, 0.17);
+// $box-shadow-lg:               0 1rem 3rem rgba($black, .175);
+
+
+
+$btn-padding-y:               .5rem;
+$btn-padding-x:               1rem;
+$btn-font-family:             $font-family-text;
+$btn-font-size:               .875rem;
+$btn-line-height:             1;
+$btn-font-weight:             $font-weight-medium;
+$btn-box-shadow:              none;
+$btn-focus-box-shadow:        none;
+$btn-height:                  3rem;
+$btn-border-radius:           1.5rem;
+$btn-white-space:             nowrap;
+$btn-border-width:            0;
+
+
+
+$input-font-size:                       .875rem;
+$input-line-height:                     1;
+$input-bg:                              transparent;
+$input-border-color:                    transparent;
+$input-padding-x:                       0;
+$input-padding-y:                       1rem;
+$input-font-weight:                     400;
+// $input-placeholder-color:               $gray-600;
+$input-btn-focus-box-shadow:            none;
+$input-height:                          3rem;
+$input-border-radius:                   0;
+$input-focus-border-color:              $primary;
+$input-focus-box-shadow:                none;
+$input-border-width:                    1px;
+
+// $form-feedback-margin-top:              .375rem;
+// $form-feedback-font-size:               10px;
+// $form-feedback-valid-color:             $primary;
+// $form-feedback-invalid-color:           $danger;
+
+$form-label-margin-bottom:              0;
+$form-label-font-size:                  .875rem;
+$form-label-font-weight:                400;
+$form-label-color:                      $dark;
+
+
+$nav-link-padding-y:                0;
+$nav-link-padding-x:                0;
+$nav-link-font-size:                .875rem;
+$nav-link-font-weight:              $font-weight-medium;
+$nav-link-color:                    $body-color;
+$nav-link-hover-color:              $blue;
+
+
+
+$navbar-padding-y:                  $spacer * .5;
+$navbar-padding-x:                  null;
+
+$navbar-nav-link-padding-x:         .5rem;
+
+$navbar-brand-font-size:            .875rem;
+$nav-link-height:                   $font-size-base * $line-height-base + $nav-link-padding-y * 2;
+$navbar-brand-height:               $navbar-brand-font-size * $line-height-base;
+$navbar-brand-padding-y:            0;
+$navbar-brand-margin-end:           0;
+
+// $navbar-toggler-padding-y:          .25rem;
+// $navbar-toggler-padding-x:          .75rem;
+// $navbar-toggler-font-size:          $font-size-lg;
+$navbar-toggler-border-radius:      50%;
+$navbar-toggler-focus-width:        0;
+
+$navbar-light-color:                rgba($body-color, 1);
+$navbar-light-hover-color:          rgba($body-color, 1);
+$navbar-light-active-color:         rgba($body-color, 1);
+$navbar-light-disabled-color:       rgba($body-color, 1);
+$navbar-light-brand-color:          $navbar-light-active-color;
+$navbar-light-brand-hover-color:    $navbar-light-active-color;
+
+
+$navbar-dark-color:                 rgba($white, 1);
+$navbar-dark-hover-color:           rgba($white, 1);
+$navbar-dark-active-color:          $white;
+$navbar-dark-disabled-color:        rgba($white, 1);
+$navbar-dark-toggler-border-color:  rgba($white, 1);
+$navbar-dark-brand-color:           $navbar-dark-active-color;
+$navbar-dark-brand-hover-color:     $navbar-dark-active-color;
+
+
+$card-spacer-y:                     $spacer * 1.25;
+$card-spacer-x:                     $spacer;
+$card-title-spacer-y:               $spacer;
+$card-border-width:                 0;
+$card-border-radius:                0;
+$card-box-shadow:                   null;
+$card-cap-padding-y:                $card-spacer-y * .5;
+$card-cap-padding-x:                $card-spacer-x;
+$card-cap-color:                    null;
+$card-height:                       null;
+$card-color:                        null;
+$card-bg:                           $white;
+$card-img-overlay-padding:          $spacer;
+
+
+
+$modal-inner-padding:               0;
+$modal-content-bg:                  $white;
+$modal-content-border-width:        0;
+$modal-content-border-radius:       0;
+$modal-content-inner-border-radius: 0;
+
+$modal-backdrop-bg:                 #EEF5FF;
+$modal-backdrop-opacity:            1;
+
+
+
+$form-check-input-width:                  1em;
+$form-check-min-height:                   $font-size-base;
+$form-check-padding-start:                0;
+$form-check-margin-bottom:                0;
+$form-check-label-color:                  $secondary;
+$form-check-input-bg:                     $gray;
+$form-check-input-border:                 1px solid $gray;
+$form-check-input-border-radius:          .125em;
+$form-check-radio-border-radius:          50%;
+// $form-check-input-focus-border:           $input-focus-border-color;
+// $form-check-input-focus-box-shadow:       $input-btn-focus-box-shadow;
+
+$form-check-input-checked-color:          $primary;
+$form-check-input-checked-bg-color:       $primary;
+$form-check-input-checked-border-color:   $primary;
+$form-check-input-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
+$form-check-radio-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>");

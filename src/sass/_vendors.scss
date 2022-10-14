@@ -1,1 +1,51 @@
 // Vendors
+
+.tns-controls [data-controls="prev"],
+.tns-controls [data-controls="next"] {
+  border: none;
+  padding: 0px;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  cursor: pointer;
+  text-align: center;
+
+  border: none;
+  background: transparent;
+
+  color: #777;
+
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+
+  font-size: 1.5rem;
+
+
+  transition: all .2s ease-in-out;
+
+
+  transform: translateY(-50%);
+}
+
+.tns-controls [data-controls="prev"]:hover,
+.tns-controls [data-controls="next"]:hover  {
+  color: #001D3E;
+}
+
+
+.tns-controls [data-controls="prev"]  {
+  left: -52px;
+
+  @include media-breakpoint-down(lg) {
+    left: 0;
+  }
+}
+
+.tns-controls [data-controls="next"] {
+  right: -52px;
+
+  @include media-breakpoint-down(lg) {
+    right: 0;
+  }
+}
